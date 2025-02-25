@@ -2,9 +2,9 @@
 
 Aqui está o plano de estudos para o mês de Fevereiro:
 
-    | DIA DE ESTUDO | ARQUIVO |
-| --- | --- | --- |
-| 25/02 | Introdução à Programação | [introducao_a_programacao.md](introducao_a_programacao.md) |
+| DIA DE ESTUDO | ARQUIVO                                  |
+| --- |------------------------------------------|
+| 25/02 | [Functions](01-Initials/functionsJS/01-basicFunctionExample.js) |
 
 Cada arquivo contém notas e exemplos de código para ajudar a entender melhor o conteúdo.
 
@@ -12,7 +12,6 @@ Cada arquivo contém notas e exemplos de código para ajudar a entender melhor o
 
 1. Clique no hyperlink do dia de estudo que você deseja acessar.
 2. Leia as notas e exemplos de código no arquivo correspondente.
-3. Faça os exercícios e práticas recomendados para reforçar o aprendizado.
 
 ## Contribuições
 
