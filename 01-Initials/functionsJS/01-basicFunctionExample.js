@@ -58,3 +58,56 @@ const cubedNumbers = map(function (x) {return x * x * x;}, numbers);
 
 console.log(cubedNumbers); // [0, 1, 8, 125, 1000]
 
+
+
+//Function Scopes
+// The following variables are defined in the global scope
+const num1 = 20;
+const num2 = 3;
+const name = "Chamakh";
+
+// This function is defined in the global scope
+function multiply() {
+    return num1 * num2;
+}
+
+console.log(multiply()); // 60
+
+// A nested function example
+function getScore() {
+    const num1 = 2;
+    const num2 = 3;
+
+    //This function is defined inside the getScore function, so it is only visible within the getScore function
+    function add() {
+        //Literal templates, you can use ${} to include variables in a string
+        return `${name} scored ${num1 + num2}`;
+    }
+
+    return add();
+    //${name}: Insere o valor da variável name na string de nome add.
+    // ${num1 + num2}: Calcula a soma de num1 e num2 e insere o resultado na string de nome add.
+    // Isso permite criar strings dinâmicas de forma mais legível e concisa.
+    // ele vai considera o nun do SCOPE, e não do global, reescreveu.
+}
+
+console.log(getScore()); // "Chamakh scored 5"
+
+
+//Arguments object
+//The arguments object is an Array-like object corresponding to the arguments passed to a function.
+function myConcat(separator) {
+    let result = ""; // initialize list
+    // iterate through arguments
+    for (let i = 1; i < arguments.length; i++) {
+        result += arguments[i] + separator;
+    }
+    return result;
+}
+
+console.log(myConcat(", ", "red", "orange", "blue"));
+console.log(myConcat("; ", "elephant", "giraffe", "lion", "cheetah"));
+console.log(myConcat(". ", "sage", "basil", "oregano", "pepper", "parsley"));
+
+//Function Parameters. You can pass any number of parameters to a function.
+
